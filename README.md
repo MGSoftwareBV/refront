@@ -1,0 +1,9 @@
+# Refront Desktop App
+
+Desktop applicatie voor MG Software Tickets.
+
+## Version: v0.5.5
+
+## Releases
+
+Check [Releases](https://github.com/MGSoftwareBV/refront/releases) voor downloads.
