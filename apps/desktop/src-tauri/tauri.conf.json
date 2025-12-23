@@ -1,0 +1,47 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Refront",
+  "identifier": "nl.refront.app",
+  "app": {
+    "macOSPrivateApi": true,
+    "withGlobalTauri": true,
+    "security": {
+      "csp": null,
+      "dangerousDisableAssetCspModification": true,
+      "freezePrototype": false,
+      "capabilities": ["default"]
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "createUpdaterArtifacts": true,
+    "macOS": {
+      "dmg": {
+        "background": "./images/installer.png"
+      }
+    },
+    "icon": [
+      "icons/production/32x32.png",
+      "icons/production/128x128.png",
+      "icons/production/128x128@2x.png",
+      "icons/production/icon.icns",
+      "icons/production/icon.ico"
+    ]
+  },
+  "plugins": {
+    "deep-link": {
+      "desktop": {
+        "schemes": ["refront"]
+      }
+    },
+    "updater": {
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IEJGQ0E5RjM4MTIxNEZBRjIKUldUeStoUVNPSi9LdnhZYzUvMmJDbWlaMElpRGJDRGZWYXJPVDVtWFNvMDdVbHR6MHZiOEE0eG4K",
+      "endpoints": [
+        "https://github.com/MGSoftwareBV/refront/releases/latest/download/latest.json"
+      ],
+      "createUpdaterArtifacts": true,
+      "dangerousInsecureTransportProtocol": true
+    }
+  }
+}
